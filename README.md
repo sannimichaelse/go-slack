@@ -7,13 +7,31 @@ Before use this tool, remember you get your Incoming Webhook number in this [pag
 
 Install
 ---------------
-`go get github.com/sannimichaelse/go-slack`
+```
+go get github.com/sannimichaelse/go-slack
+```
+
+Build
+---------------
+```
+cd $GOPATH/src/github.com/sannimichaelse/go-slack
+```
+```
+go install
+```
+
+Usage
+---------------
+
+```
+go-slack -m "test msg"
+```
 
 
 Change the default setting
 ---------------
 
-Change the configuration file which will generate when your first time launch this application.
+A `go-slack.json` file will be generated, update the configuration file on first launch.
 
 ```
 {
@@ -31,10 +49,3 @@ Detail explaination as follow:
 - `emoji`: The emoji of your bot, such `:octocat:`. Refer http://www.emoji-cheat-sheet.com/ for more
 
 Fill all infor base on this [page](https://api.slack.com/incoming-webhooks)
-
-Usage
----------------
-
-```
-go-slack -m "test msg"
-```
